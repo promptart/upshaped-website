@@ -23,21 +23,15 @@
       }
     }
 
-    var mainNavCollapse = new bootstrap.Collapse(mainNav, {
-        toggle: false
-    });
-
     // Collapse Navbar
     var collapseNavbar = function() {
 
       var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
       if (scrollTop > 100) {
-        // mainNav.classList.add("collapse");
-        // mainNavCollapse.hide();
+        mainNav.classList.add("navbar-shrink");
       } else {
-        // mainNav.classList.remove("navbar-shrink");
-        // mainNavCollapse.show();
+        mainNav.classList.remove("navbar-shrink");
       }
     };
     // Collapse now if page is not at top
