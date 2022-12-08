@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden;  height: 100%;">
+	<head>
+		<title>UpShaped Test Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="assets/css/custom_bootstrap.css">
+
+
+        <!-- Import the component -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+	</head>
+
+	<body style="overflow: hidden; height: 100%;">
+        <div>
+            <span class="fs-1">Welcome to the Test.</span>
+        </div>
+
+        <!-- Use it like any other HTML element -->
+        <model-viewer
+            id="display"
+            class="gx-0 h-100 w-100"
+            camera-orbit="45deg 75deg 3.5m"
+            max-camera-orbit="infinity infinity 5.5m"
+            ar
+            disable-pan
+            shadow-intensity="1"
+            camera-controls touch-action="pan-y"
+
+            alt="UpShaped Display of leather couch"
+            src="assets/models/couch/leather_midres.glb"
+            poster="assets/img/demo/3dprev.jpg"
+        ></model-viewer>
+
+        <script type="module" src="assets/js/test.js"></script>
+
+        <!-- environment-image="assets/models/shared-assets/moon_1k.hdr" -->
+	</body>
+</html>
